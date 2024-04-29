@@ -11,7 +11,7 @@ public class App {
 
         System.out.println();
         System.out.println("Ahora mostraremos marca y RAM");
-        System.out.println("Es un "+ordenador.getMarca()+" con "+ordenador.getMemoria()+" Gb de memoria RAM.");
+        System.out.println("Es un "+ordenador.getMaca()+" con "+ordenador.getMemoria()+" Gb de memoria RAM.");
 
         System.out.println();
         ordenador.setDisco(1000);

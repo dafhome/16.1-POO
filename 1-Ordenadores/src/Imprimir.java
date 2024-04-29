@@ -4,7 +4,6 @@ public class Imprimir {
     int enter;
     int sleep;
 
-
     public Imprimir(String frase, int enter, int sleep) {
         this.frase = frase;
         this.enter = enter;
@@ -48,7 +47,6 @@ public class Imprimir {
     public int getSleep(){
         return this.sleep;
     }
-
 
     public void printLentamente(){
         String frase = this.frase;
