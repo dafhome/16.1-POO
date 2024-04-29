@@ -37,7 +37,27 @@ public class App {
 
         System.out.println("El nuevo ordenador es un "+ordenador2.getMarca()+" modelo "+ordenador2.getModelo() +" con un disco duro SSD de "+ordenador2.getDisco()+" Gb, "+ordenador2.getProcesadore()+" procesadores y "+ordenador2.getMemoria()+" Gb de memoria RAM.");
 
+        System.out.println();
 
+        Imprimir print = new Imprimir(null, 1, 1);
+        print.setFrase("El nuevo ordenador es un "+ordenador2.getMarca()+" modelo "+ordenador2.getModelo() +" con un disco duro SSD de "+ordenador2.getDisco()+" Gb, "+ordenador2.getProcesadore()+" procesadores y "+ordenador2.getMemoria()+" Gb de memoria RAM.");
+        print.printLentamente();
+
+
+        print.setEnter(0);
+        print.setFrase("El nuevo ordenador es un ");
+        print.printLentamente();
+        print.setFrase(ordenador2.getMarca());
+        print.printLentamente();
+        print.setFrase(" modelo ");
+        print.printLentamente();
+        print.setFrase(ordenador2.getMarca());
+        print.printLentamente();
+        print.setFrase(" con disco SSD de");
+        print.printLentamente();
+        print.setEnter(1);
+        print.setFrase(" "+ordenador2.getDisco()+".");
+        print.printLentamente();
 
     }
 }
